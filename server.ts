@@ -7,6 +7,12 @@ import bodyParser = require('body-parser');
 import mongoose = require('mongoose');
 const app = express();
 
+require('./models/Bill');
+mongoose.connect('mongodb://localhost/bill', (err) => {
+  if (err) console.error(err);
+  else console.log('Connected to mongodb://localhost/bill');
+});
+
 // view engine setup
 app.set('views', './views');
 app.engine('html', require('ejs').renderFile);
@@ -19,8 +25,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+app.use('/templates', require('./routes/viewRoutes'));
+
 app.use(express.static('./ngApp'));
 app.use('/scripts', express.static('bower_components'));
+
+app.use('/api/v1/posts', require('./routes/postRoutes'));
 
 app.get('/*', function(req, res, next) {
   if (/.js|.html|.css|templates|js|scripts/.test(req.path) || req.xhr) {
