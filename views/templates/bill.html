@@ -1,1 +1,17 @@
-
+<div class="bill">
+    <div class="well text-center" style="background-color: white; border-radius: 0; border: none; font-size: 20px;">
+        <a ui-sref="Create">Make Your Own Bill</a>
+    </div>
+    <div class="container">
+        <div class="wrap">
+            <div class="img-container animated slideInLeft" ng-repeat="p in vm.posts">
+                <a ui-sref="Details({id: p._id})">
+                    <img class="img-responsive" ng-src="{{ p.imgUrl }}">
+                    <div class="description">
+                        <p class="text-center">{{ p.title }}</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

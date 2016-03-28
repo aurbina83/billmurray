@@ -23,6 +23,12 @@ namespace app {
       templateUrl: '/templates/create.html',
       controller: 'CreateController',
       controllerAs: 'vm'
+  })
+  .state('Details', {
+      url:'/details/:id',
+      templateUrl:'/templates/details.html',
+      controller: 'DetailController',
+      controllerAs: 'vm'
   });
 
     $urlRouterProvider.otherwise('/');

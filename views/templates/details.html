@@ -1,0 +1,10 @@
+<div class="detail container">
+    <div class="detail-img">
+        <h1>{{vm.post.title}}</h1>
+        <a ui-sref="Bill">
+            <img src="{{vm.post.imgUrl}}">
+        </a>
+        <p>{{vm.post.tags}}</p>
+        <button class='btn btn-danger btn-lg' ng-click='vm.deletePost()'>Goodbye Bill</button>
+    </div>
+</div>

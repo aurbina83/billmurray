@@ -36,3 +36,132 @@ body {
 .home button:hover {
     color: white;
 }
+
+.create {
+    width: 100%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.create form {
+    width: 600px;
+}
+
+.create form, label, input, button {
+    margin: 6px;
+}
+
+.create label {
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    font-size: 20px;
+}
+
+.header h1 {
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    font-size: 100px;
+    margin-top: 25px;
+}
+
+.create button {
+    color: #92c0d4;
+    background-color: white;
+    border: 1px double #92c0d4;
+}
+
+.create button:hover {
+    color: #92c0d4;
+}
+
+
+
+.bill .container a, button {
+    margin: 0 auto;
+}
+
+.bill .container .wrap {
+    -webkit-column-width: 230px;
+        -moz-column-width: 230px;
+            column-width: 230px;
+    -webkit-column-count: 4;
+       -moz-column-count: 4;
+            column-count: 4;
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
+}
+
+.img-container {
+    width: 100%;
+    position: relative;
+    margin: 5px;
+}
+
+
+.img-container .description {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.detail-img {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.detail-img h1, p {
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+}
+
+.detail-img img {
+    max-height: 700px;
+    width: auto;
+}
+
+.detail-img h1 {
+    font-size: 80px;
+}
+
+.detail-img p {
+    font-size: 40px;
+}

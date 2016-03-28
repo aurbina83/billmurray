@@ -3,7 +3,6 @@ namespace app.Controllers {
 
     public posts: Array<app.i.IBill>;
 
-    public rand = Math.floor(Math.random()* 9 + 1);
 
     constructor(private PostService: app.Services.PostService) {
         this.posts = PostService.getAll();
