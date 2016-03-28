@@ -1,0 +1,11 @@
+<div class="container create">
+    <form class="well container" name="CreateBillForm" ng-submit="vm.createBill()">
+        <label>Image Url</label>
+        <input type="text" class="form-control" name="imgUrl" ng-model="vm.post.imgUrl" required>
+        <label>Title</label>
+        <input type="text" class="form-control" name="title" ng-model="vm.post.title" required>
+        <label>Tags</label>
+        <input type="text" class="form-control" name="tags" ng-model="vm.post.tags" required>
+        <button class="btn btn-lg" type="submit" ng-disabled="CreateBillForm.$invalid" >Make Magic Happen</button>
+    </form>
+</div>

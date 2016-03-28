@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #92c0d4;
+}
+
+.well {
+    background-color: #D3574D;
+}
+
+.home h1 {
+        font-family: 'Londrina Solid', cursive;
+        color: #d3574d;
+        font-size: 100px;
+        -webkit-text-stroke: 2px white;
+        margin-top: 50px;
+}
+
+.home img {
+    background-color: #f9b88f;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 18px double #81B7BE;
+    max-width: 40%;
+}
+
+.home button {
+    margin-top: 50px;
+    color: white;
+    background-color: #d3574d;
+    border: 1px double white;
+}
+
+.home button:hover {
+    color: white;
+}

@@ -8,11 +8,23 @@ namespace app {
 
     $stateProvider.state('Home', {
       url: '/',
-      templateUrl: '/templates/home.html',
+      templateUrl: '/templates/home.jade',
       controller: app.Controllers.HomeController,
       controllerAs: 'vm'
-    });
-    
+  })
+  .state('Bill', {
+      url:'/bill',
+      templateUrl: '/templates/bill.html',
+      controller: 'BillController',
+      controllerAs: 'vm'
+  })
+  .state('Create', {
+      url: '/create',
+      templateUrl: '/templates/create.html',
+      controller: 'CreateController',
+      controllerAs: 'vm'
+  });
+
     $urlRouterProvider.otherwise('/');
     $locationProvider.html5Mode(true);
   });
