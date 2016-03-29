@@ -1,0 +1,17 @@
+<div class="header text-center">
+    <h1>UPDATE BILL</h1>
+</div>
+
+<div class="container create">
+    <form class="well container" name="UpdateBillForm" ng-submit="vm.updateBill()">
+        <label>Image Url</label>
+        <input type="text" class="form-control" name="imgUrl" ng-model="vm.post.imgUrl">
+        <label>Title</label>
+        <input type="text" class="form-control" name="title" ng-model="vm.post.title">
+        <label>Tags</label>
+        <input type="text" class="form-control" name="tags" ng-model="vm.post.tags">
+        <div class="text-center">
+            <button class="btn btn-lg" type="submit" >Make Magic Happen</button>
+        </div>
+    </form>
+</div>

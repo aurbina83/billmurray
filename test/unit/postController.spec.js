@@ -51,4 +51,14 @@ describe('postController', () => {
             controller(post).getAll(req, res, next);
         });
     });
+    // describe('findOne', () => {
+    //     it('Should return an object with an ID equal to 5', (done) => {
+    //         let post = {};
+    //         let req = {};
+    //         let res = {};
+    //         let next = function () {
+    //
+    //         };
+    //     });
+    // });
 });

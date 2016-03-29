@@ -14,13 +14,13 @@ router.get('/', ctrl.getAll);
 //GET: api/v1/posts/:id
 router.get('/:id', ctrl.findOne);
 
+//DELETE: api/v1/posts/:id
+router.delete('/:id', ctrl.remove);
+
 //POST: api/v1/posts
 router.post('/', ctrl.create);
 
 //PUT: api/v1/posts/:id
-router.post('/:id', ctrl.update);
-
-//DELETE: api/v1/posts/:id
-router.delete('/:id', ctrl.remove);
+router.put('/:id', ctrl.update);
 
 export = router;
